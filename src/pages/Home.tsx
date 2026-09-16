@@ -12,7 +12,7 @@ export default function Home() {
           <div className="script">Care curated for<br />Your Children.</div>
           <p>Thoughtfully tailored childcare experiences for weddings and events across Southern Queensland, so you and your guests can be fully present — knowing the little people are safe, happy and creating memories of their own.</p>
           <div className="actions">
-            <Link className="button" to="/#contact">Book Your Connection Call</Link>
+            <Link className="button" to="/contact">Book Your Connection Call</Link>
             <Link className="button outline" to="/#services">Explore Our Services</Link>
           </div>
           <div className="hero-note"><span>✦</span> Beautifully considered care, wherever your celebration takes you</div>
@@ -48,7 +48,7 @@ export default function Home() {
               <span className="round">♡</span>
               <h3>Wedding Childcare</h3>
               <p>From intimate gatherings to grand celebrations, we create personalised wedding childcare experiences across Southern Queensland so you can relax, celebrate and enjoy every moment.</p>
-              <Link to="/#contact">Learn more&nbsp; →</Link>
+              <Link to="/contact">Learn more&nbsp; →</Link>
             </div>
           </article>
           <article className="card">
@@ -57,7 +57,7 @@ export default function Home() {
               <span className="round">♧</span>
               <h3>Private &amp; Corporate Care</h3>
               <p>Conferences, corporate events, private functions and group bookings. Flexible childcare solutions designed for families, business and special occasions.</p>
-              <Link to="/#contact">Learn more&nbsp; →</Link>
+              <Link to="/contact">Learn more&nbsp; →</Link>
             </div>
           </article>
           <article className="card">
@@ -66,7 +66,7 @@ export default function Home() {
               <span className="round">♡</span>
               <h3>Defence Care &amp; Support</h3>
               <p>Proudly supporting Australian Defence families with trusted, flexible childcare solutions — wherever you need us across Queensland.</p>
-              <Link to="/#contact">Learn more&nbsp; →</Link>
+              <Link to="/contact">Learn more&nbsp; →</Link>
             </div>
           </article>
         </div>

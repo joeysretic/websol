@@ -53,9 +53,9 @@ export default function Navbar() {
       <div className="announcement">
         <span>✦</span> Premium Wedding &amp; Event Childcare Across Southern Queensland
         <div>
-          <Link to="/#contact">Enquire</Link>
+          <Link to="/contact">Enquire</Link>
           <i></i>
-          <Link to="/#contact">Book Your Connection Call</Link>
+          <Link to="/contact">Book Your Connection Call</Link>
         </div>
       </div>
 
@@ -142,7 +142,7 @@ export default function Navbar() {
           <Link to="/#journal" onClick={() => setMenuOpen(false)}>Journal</Link>
           <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
         </nav>
-        <Link className="button small" to="/#contact" onClick={() => setMenuOpen(false)}>
+        <Link className="button small" to="/contact" onClick={() => setMenuOpen(false)}>
           Book Your Connection Call
         </Link>
       </header>

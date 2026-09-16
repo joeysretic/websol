@@ -32,6 +32,8 @@ Deno.serve(async (req: Request) => {
       table = "event_registrations";
     } else if (formType === "parent") {
       table = "parent_registrations";
+    } else if (formType === "contact") {
+      table = "contact_messages";
     } else {
       return new Response(
         JSON.stringify({ error: "Invalid formType" }),
@@ -45,7 +47,7 @@ Deno.serve(async (req: Request) => {
 
     if (insertError) {
       return new Response(
-        JSON.stringify({ error: "Failed to save registration" }),
+        JSON.stringify({ error: "Failed to save submission" }),
         { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } },
       );
     }
@@ -58,11 +60,14 @@ Deno.serve(async (req: Request) => {
     let htmlBody: string;
 
     if (formType === "event") {
-      subject = `New Event Registration — ${formData.contact_name || "Unknown"}`;
-      htmlBody = buildEventEmail(formData);
+      subject = `New Event Registration — ${formData.contact_name || formData.surname || "Unknown"}`;
+      htmlBody = buildEmail("New Event Registration", "A new event registration has been submitted through the Little Wonders website.", formData);
+    } else if (formType === "parent") {
+      subject = `New Parent Registration — ${formData.parent_name || formData.guardian1_surname || "Unknown"}`;
+      htmlBody = buildEmail("New Parent Registration", "A new parent registration has been submitted through the Little Wonders website.", formData);
     } else {
-      subject = `New Parent Registration — ${formData.parent_name || "Unknown"}`;
-      htmlBody = buildParentEmail(formData);
+      subject = `New Contact Message — ${formData.name || "Unknown"}`;
+      htmlBody = buildEmail("New Contact Message", "A new contact message has been submitted through the Little Wonders website.", formData);
     }
 
     // Send email via Resend if API key is configured
@@ -100,57 +105,16 @@ Deno.serve(async (req: Request) => {
   }
 });
 
-function buildEventEmail(d: Record<string, unknown>): string {
-  const rows = [
-    ["Contact Name", d.contact_name],
-    ["Contact Email", d.contact_email],
-    ["Contact Phone", d.contact_phone],
-    ["Event Type", d.event_type],
-    ["Event Date", d.event_date],
-    ["Start Time", d.event_start_time],
-    ["End Time", d.event_end_time],
-    ["Venue Name", d.event_venue_name],
-    ["Venue Address", d.event_venue_address],
-    ["City", d.event_city],
-    ["Number of Children", d.number_of_children],
-    ["Children Ages", d.children_ages],
-    ["Care Hours", d.care_hours],
-    ["Additional Info", d.additional_info],
-  ];
+function buildEmail(title: string, intro: string, d: Record<string, unknown>): string {
+  const rows = Object.entries(d).map(([label, val]) => {
+    const display = Array.isArray(val) ? val.join(", ") : String(val ?? "—");
+    return `<tr><td style="padding:8px 16px;border-bottom:1px solid #eee;font-weight:600;color:#315f89;">${label.replace(/[-_]/g, " ")}</td><td style="padding:8px 16px;border-bottom:1px solid #eee;">${display}</td></tr>`;
+  }).join("");
 
-  const tableRows = rows
-    .map(([label, val]) => `<tr><td style="padding:8px 16px;border-bottom:1px solid #eee;font-weight:600;color:#3a5d40;">${label}</td><td style="padding:8px 16px;border-bottom:1px solid #eee;">${val ?? "—"}</td></tr>`)
-    .join("");
-
-  return `<div style="font-family:Georgia,serif;max-width:600px;margin:0 auto;background:#fdfbf7;padding:32px;">
-    <h1 style="color:#3a5d40;font-size:28px;margin-bottom:24px;">New Event Registration</h1>
-    <p style="color:#78716c;font-size:14px;margin-bottom:24px;">A new event registration has been submitted through the Little Wonders website.</p>
-    <table style="width:100%;border-collapse:collapse;font-family:sans-serif;font-size:14px;color:#44403c;">${tableRows}</table>
-    <p style="margin-top:32px;color:#a8a29e;font-size:12px;">This email was sent automatically from the Little Wonders registration form.</p>
-  </div>`;
-}
-
-function buildParentEmail(d: Record<string, unknown>): string {
-  const rows = [
-    ["Parent Name", d.parent_name],
-    ["Parent Email", d.parent_email],
-    ["Parent Phone", d.parent_phone],
-    ["Address", d.parent_address],
-    ["Number of Children", d.number_of_children],
-    ["Children Details", d.children_details],
-    ["Care Type", d.care_type],
-    ["Preferred Date", d.preferred_date],
-    ["Additional Info", d.additional_info],
-  ];
-
-  const tableRows = rows
-    .map(([label, val]) => `<tr><td style="padding:8px 16px;border-bottom:1px solid #eee;font-weight:600;color:#3a5d40;">${label}</td><td style="padding:8px 16px;border-bottom:1px solid #eee;">${val ?? "—"}</td></tr>`)
-    .join("");
-
-  return `<div style="font-family:Georgia,serif;max-width:600px;margin:0 auto;background:#fdfbf7;padding:32px;">
-    <h1 style="color:#3a5d40;font-size:28px;margin-bottom:24px;">New Parent Registration</h1>
-    <p style="color:#78716c;font-size:14px;margin-bottom:24px;">A new parent registration has been submitted through the Little Wonders website.</p>
-    <table style="width:100%;border-collapse:collapse;font-family:sans-serif;font-size:14px;color:#44403c;">${tableRows}</table>
-    <p style="margin-top:32px;color:#a8a29e;font-size:12px;">This email was sent automatically from the Little Wonders registration form.</p>
+  return `<div style="font-family:Georgia,serif;max-width:600px;margin:0 auto;background:#fbfaf7;padding:32px;">
+    <h1 style="color:#315f89;font-size:28px;margin-bottom:24px;">${title}</h1>
+    <p style="color:#637180;font-size:14px;margin-bottom:24px;">${intro}</p>
+    <table style="width:100%;border-collapse:collapse;font-family:'DM Sans',sans-serif;font-size:14px;color:#3d4650;">${rows}</table>
+    <p style="margin-top:32px;color:#8291a0;font-size:12px;">This email was sent automatically from the Little Wonders website.</p>
   </div>`;
 }

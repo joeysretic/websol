@@ -10,7 +10,7 @@ const footerLinks: { label: string; href: string }[] = [
   { label: 'Event Registration', href: '/event-registration' },
   { label: 'Parent Registration', href: '/parent-registration' },
   { label: 'Journal', href: '/#journal' },
-  { label: 'Contact', href: '/#contact' },
+  { label: 'Contact', href: '/contact' },
 ];
 
 export default function Footer() {

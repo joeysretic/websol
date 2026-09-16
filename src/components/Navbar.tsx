@@ -140,7 +140,7 @@ export default function Navbar() {
             </div>
           </div>
           <Link to="/#journal" onClick={() => setMenuOpen(false)}>Journal</Link>
-          <Link to="/#contact" onClick={() => setMenuOpen(false)}>Contact</Link>
+          <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
         </nav>
         <Link className="button small" to="/#contact" onClick={() => setMenuOpen(false)}>
           Book Your Connection Call

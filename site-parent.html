@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register your family and children for care with Little Wonders.">
+  <title>Parent Registration | Little Wonders</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600;700&family=Italianno&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../internal.css">
+  <link rel="stylesheet" href="../registration.css">
+</head>
+<body class="registration-page">
+  <div class="registration-strip"><div class="registration-strip-inner"><span class="registration-strip-label">Ready to register?</span><div class="registration-strip-links"><a href="../event-registration/">Event Registration <span aria-hidden="true">→</span></a><a href="../parent-registration/">Parent Registration <span aria-hidden="true">→</span></a></div></div></div><div class="announcement"><span>✦</span> Premium Wedding &amp; Event Childcare Across Southern Queensland <div><a href="../#contact">Enquire</a><i></i><a href="../#contact">Book Your Connection Call</a></div></div>
+  <header class="site-header">
+    <a class="brand" href="../"><img class="brand-logo" src="../assets/littlewonders-logo.png" alt="Little Wonders"></a>
+    <button class="menu" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav>
+      <a href="../#services">Wedding Childcare</a><a href="../care-options/">Care Options</a><a href="../#services">Private &amp; Corporate Care</a><a href="../#services">Group Bookings</a><a href="../#services">Defence Care</a>
+      <div class="nav-dropdown"><a href="../about/" aria-haspopup="true">About Us</a><div class="dropdown-menu"><a href="../about/">About Us</a><a href="../our-story/">Our Story</a><a href="../wonder-team/">Our Wonder Team</a><a href="../values-mission-sustainability/">Values, Mission &amp; Sustainability</a><a href="../ratios/">Our Ratios</a><a href="../team-safety/">Team Safety</a><a href="../faq/">FAQ</a></div></div>
+      <div class="nav-dropdown"><a href="../event-registration/" aria-haspopup="true" aria-current="page">Events</a><div class="dropdown-menu"><a href="../event-registration/">Event Registration</a><a href="../parent-registration/" aria-current="page">Parent Registration</a></div></div>
+      <a href="../#journal">Journal</a><a href="../#contact">Contact</a>
+    </nav>
+    <a class="button small" href="../#contact">Book Your Connection Call</a>
+  </header>
+
+  <main>
+    <section class="registration-hero">
+      <div class="registration-shell registration-hero-inner">
+        <div class="registration-hero-copy"><span class="registration-kicker">Families register</span><h1>Thoughtful care<br>for <em>every little wonder.</em></h1><p>Share a little about your family, your children and the care you are looking for. Once complete, this form will prepare an email for Little Wonders so our team can review the details with you.</p></div>
+        <div class="registration-hero-card"><img src="../assets/babysitting-family.jpg" alt="Child enjoying warm, attentive family care"></div>
+      </div>
+    </section>
+
+    <div class="registration-shell">
+      <section class="registration-intro"><h2>Parent registration</h2><p>Complete the details below as fully as you can. Fields marked with an asterisk are required; we can clarify anything else together.</p></section>
+      <div class="registration-layout">
+        <aside class="registration-aside"><h3>Your registration</h3><ol><li>Type of care</li><li>Parent / guardian details</li><li>Emergency contact</li><li>Care preferences</li><li>Children &amp; health</li><li>Privacy &amp; consent</li></ol><p class="registration-aside-note">Your completed form stays in this browser until you choose to prepare the email. It is not stored on this website.</p></aside>
+        <form id="registration-form" data-form-type="Parent" autocomplete="on">
+          <div class="registration-form-card">
+            <p class="required-note"><span>*</span> Required fields. Please do not include information that is not relevant to arranging care.</p>
+
+            <fieldset class="form-section" data-section="Type of care">
+              <legend>What would you like to register for?<small>Choose the care pathway that best fits your family.</small></legend>
+              <div class="choice-grid">
+                <label class="choice"><input type="radio" name="care_type" value="home" required><span><strong>Care at home</strong>Babysitting or family care at home.</span></label>
+                <label class="choice"><input type="radio" name="care_type" value="defence" required><span><strong>Defence care &amp; support</strong>For Defence families and emergency services families.</span></label>
+                <label class="choice"><input type="radio" name="care_type" value="event" required><span><strong>Register attendance for an event</strong>For a wedding, business party or other event.</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-section" data-section="Parent or guardian 1">
+              <legend>Parent / guardian 1<small>Please provide the primary contact for this registration.</small></legend>
+              <div class="form-grid">
+                <div class="field"><label for="guardian1_surname">Family / surname <span>*</span></label><input id="guardian1_surname" name="guardian1_surname" type="text" autocomplete="family-name" required></div>
+                <div class="field"><label for="guardian1_given_names">Given name/s <span>*</span></label><input id="guardian1_given_names" name="guardian1_given_names" type="text" autocomplete="given-name" required></div>
+                <div class="field"><label for="guardian1_mobile">Mobile <span>*</span></label><input id="guardian1_mobile" name="guardian1_mobile" type="tel" autocomplete="tel" required></div>
+                <div class="field"><label for="guardian1_phone">Phone</label><input id="guardian1_phone" name="guardian1_phone" type="tel"></div>
+                <div class="field full"><label for="guardian1_email">Email address <span>*</span></label><input id="guardian1_email" name="guardian1_email" type="email" autocomplete="email" required></div>
+                <div class="field full"><label for="guardian1_address">Street address <span>*</span></label><input id="guardian1_address" name="guardian1_address" type="text" autocomplete="street-address" required></div>
+                <div class="field"><label for="guardian1_suburb">City / suburb <span>*</span></label><input id="guardian1_suburb" name="guardian1_suburb" type="text" autocomplete="address-level2" required></div>
+                <div class="field"><label for="guardian1_state">State <span>*</span></label><input id="guardian1_state" name="guardian1_state" type="text" autocomplete="address-level1" required></div>
+                <div class="field"><label for="guardian1_postcode">Postcode <span>*</span></label><input id="guardian1_postcode" name="guardian1_postcode" type="text" inputmode="numeric" autocomplete="postal-code" required></div>
+                <div class="field"><label for="guardian1_dob">Date of birth</label><input id="guardian1_dob" name="guardian1_dob" type="date"></div>
+                <div class="field"><label for="guardian1_gender">Gender</label><input id="guardian1_gender" name="guardian1_gender" type="text"></div>
+                <div class="field"><label for="guardian1_occupation">Occupation</label><input id="guardian1_occupation" name="guardian1_occupation" type="text"></div>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-section" data-section="Parent or guardian 2">
+              <legend>Parent / guardian 2<small>Optional — complete this section if another parent or guardian should be included.</small></legend>
+              <div class="form-grid">
+                <div class="field"><label for="guardian2_surname">Family / surname</label><input id="guardian2_surname" name="guardian2_surname" type="text"></div>
+                <div class="field"><label for="guardian2_given_names">Given name/s</label><input id="guardian2_given_names" name="guardian2_given_names" type="text"></div>
+                <div class="field"><label for="guardian2_mobile">Mobile</label><input id="guardian2_mobile" name="guardian2_mobile" type="tel"></div>
+                <div class="field"><label for="guardian2_phone">Phone</label><input id="guardian2_phone" name="guardian2_phone" type="tel"></div>
+                <div class="field"><label for="guardian2_email">Email address</label><input id="guardian2_email" name="guardian2_email" type="email"></div>
+                <div class="field"><label for="guardian2_occupation">Occupation</label><input id="guardian2_occupation" name="guardian2_occupation" type="text"></div>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-section" data-section="Emergency contact">
+              <legend>Emergency contact<small>This should be someone Little Wonders can contact if a parent or guardian cannot be reached.</small></legend>
+              <div class="form-grid">
+                <div class="field"><label for="emergency_name">Contact name <span>*</span></label><input id="emergency_name" name="emergency_name" type="text" required></div>
+                <div class="field"><label for="emergency_number">Contact number <span>*</span></label><input id="emergency_number" name="emergency_number" type="tel" required></div>
+                <div class="field full"><label for="emergency_relationship">Relationship to child / children <span>*</span></label><input id="emergency_relationship" name="emergency_relationship" type="text" required></div>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-section" data-section="Care preferences">
+              <legend>Care preferences<small>Tell us what would make the care arrangement feel right for your family.</small></legend>
+              <div class="subsection" style="margin-top:0;padding-top:0;border-top:0"><h3>Care types</h3><div class="choice-grid"><label class="choice"><input type="checkbox" name="care_preferences_type" value="Regular babysitting"><span>Regular babysitting</span></label><label class="choice"><input type="checkbox" name="care_preferences_type" value="Wedding care"><span>Wedding care</span></label><label class="choice"><input type="checkbox" name="care_preferences_type" value="Event care"><span>Event care</span></label><label class="choice"><input type="checkbox" name="care_preferences_type" value="Private / corporate care"><span>Private / corporate care</span></label><label class="choice"><input type="checkbox" name="care_preferences_type" value="Group bookings"><span>Group bookings</span></label><label class="choice"><input type="checkbox" name="care_preferences_type" value="Defence care / support"><span>Defence care / support</span></label><label class="choice"><input type="checkbox" name="care_preferences_type" value="Other"><span>Other</span></label></div></div>
+              <div class="subsection"><h3>Preferred qualities</h3><p class="required-note">Choose at least five qualities that matter to your family.</p><div class="choice-grid three" data-min-checks="5"><label class="choice"><input type="checkbox" name="preferred_qualities" value="Energetic"><span>Energetic</span></label><label class="choice"><input type="checkbox" name="preferred_qualities" value="Creative"><span>Creative</span></label><label class="choice"><input type="checkbox" name="preferred_qualities" value="Innovative"><span>Innovative</span></label><label class="choice"><input type="checkbox" name="preferred_qualities" value="Nature lover"><span>Nature lover</span></label><label class="choice"><input type="checkbox" name="preferred_qualities" value="Clean / tidy"><span>Clean / tidy</span></label><label class="choice"><input type="checkbox" name="preferred_qualities" value="Play-based planner"><span>Play-based planner</span></label><label class="choice"><input type="checkbox" name="preferred_qualities" value="Enthusiastic"><span>Enthusiastic</span></label><label class="choice"><input type="checkbox" name="preferred_qualities" value="Nurturing"><span>Nurturing</span></label><label class="choice"><input type="checkbox" name="preferred_qualities" value="Flexible"><span>Flexible</span></label><label class="choice"><input type="checkbox" name="preferred_qualities" value="Forward thinker"><span>Forward thinker</span></label><label class="choice"><input type="checkbox" name="preferred_qualities" value="Punctual"><span>Punctual</span></label><label class="choice"><input type="checkbox" name="preferred_qualities" value="Professional"><span>Professional</span></label><label class="choice"><input type="checkbox" name="preferred_qualities" value="LGBTIQA+ friendly"><span>LGBTIQA+ friendly</span></label></div></div>
+              <div class="subsection"><h3>Experience preferences</h3><div class="choice-grid"><label class="choice"><input type="checkbox" name="experience_preferences" value="Childcare experience over 12 months"><span>Childcare experience over 12 months</span></label><label class="choice"><input type="checkbox" name="experience_preferences" value="Additional needs experience"><span>Additional needs experience</span></label><label class="choice"><input type="checkbox" name="experience_preferences" value="Infant experience"><span>Infant experience</span></label><label class="choice"><input type="checkbox" name="experience_preferences" value="Nursing experience"><span>Nursing experience</span></label><label class="choice"><input type="checkbox" name="experience_preferences" value="Willing to travel rurally"><span>Willing to travel rurally</span></label></div></div>
+              <div class="form-grid" style="margin-top:20px"><div class="field"><label for="age_preference">Preferred age range for your care professional</label><input id="age_preference" name="age_preference" type="text"></div><div class="field"><label for="care_preferences_notes">Care preferences and notes</label><textarea id="care_preferences_notes" name="care_preferences_notes"></textarea></div></div>
+            </fieldset>
+
+            <fieldset class="form-section conditional" data-section="Event attendance" data-show-when="care_type=event" hidden>
+              <legend>Register attendance for an event<small>We’ll match this registration to the event details where possible.</small></legend>
+              <div class="form-grid">
+                <div class="field"><label for="event_registration_name">Event name</label><input id="event_registration_name" name="event_registration_name" type="text"></div>
+                <div class="field"><label for="event_registration_code">Event code, if known</label><input id="event_registration_code" name="event_registration_code" type="text"></div>
+                <div class="field full"><span class="field-label">Are you already a Little Wonders family?</span><div class="choice-grid"><label class="choice"><input type="radio" name="existing_family" value="yes"><span>Yes</span></label><label class="choice"><input type="radio" name="existing_family" value="no"><span>No</span></label></div></div>
+                <div class="field"><label for="client_number">Client number, if known</label><input id="client_number" name="client_number" type="text"></div>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-section conditional" data-section="Defence family details" data-show-when="care_type=defence" hidden>
+              <legend>Defence care &amp; support<small>These details help us understand the Defence or emergency services context.</small></legend>
+              <div class="form-grid">
+                <div class="field full"><span class="field-label">Are you a Defence or emergency services family?</span><div class="choice-grid"><label class="choice"><input type="radio" name="defence_family" value="yes"><span>Yes</span></label><label class="choice"><input type="radio" name="defence_family" value="no"><span>No</span></label></div></div>
+                <div class="field full"><span class="field-label">Are you registering for a Defence-related event?</span><div class="choice-grid"><label class="choice"><input type="radio" name="defence_event" value="yes"><span>Yes</span></label><label class="choice"><input type="radio" name="defence_event" value="no"><span>No</span></label></div></div>
+                <div class="field"><label for="defence_event_name">Event name</label><input id="defence_event_name" name="defence_event_name" type="text"></div>
+                <div class="field"><label for="defence_client_number">Client number, if known</label><input id="defence_client_number" name="defence_client_number" type="text"></div>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-section" data-section="Home and family arrangements">
+              <legend>Home &amp; family arrangements<small>Only share details that are relevant to the safety and care arrangement.</small></legend>
+              <div class="form-grid">
+                <div class="field"><label for="home_arrangement">Home care arrangement</label><select id="home_arrangement" name="home_arrangement"><option value="">Please select</option><option>Parents / guardians live with the children</option><option>Parent / guardian no longer resides with the children</option><option>Visiting / custody arrangement</option><option>Other arrangement</option></select></div>
+                <div class="field"><label for="alternative_addresses">Are alternative addresses involved?</label><select id="alternative_addresses" name="alternative_addresses"><option value="">Please select</option><option>No</option><option>Yes</option></select></div>
+                <div class="field full"><label for="arrangement_details">Relevant family arrangement details</label><textarea id="arrangement_details" name="arrangement_details" placeholder="Include any practical information we need to know about collection, care or contact arrangements."></textarea></div>
+                <div class="field full"><span class="field-label">Are there court orders, parental arrangements or a domestic violence order relevant to care?</span><div class="choice-grid"><label class="choice"><input type="radio" name="court_orders" value="yes"><span>Yes</span></label><label class="choice"><input type="radio" name="court_orders" value="no"><span>No</span></label></div></div>
+                <div class="field full"><label for="court_order_details">If yes, please provide relevant details and tell us what documents our team should discuss with you</label><textarea id="court_order_details" name="court_order_details"></textarea></div>
+                <div class="field full"><span class="field-label">Are there pets at the care address?</span><div class="choice-grid"><label class="choice"><input type="radio" name="pets" value="yes"><span>Yes</span></label><label class="choice"><input type="radio" name="pets" value="no"><span>No</span></label></div></div>
+                <div class="field full"><label for="pet_details">Pet details, including any guard or dangerous animals</label><textarea id="pet_details" name="pet_details"></textarea></div>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-section" data-section="Children">
+              <legend>Children<small>Start with the first child. You can add up to three more children.</small></legend>
+              <div class="children-grid">
+                <div class="child-card"><h3>Child 1</h3><div class="form-grid"><div class="field full"><label for="child1_name">Full name <span>*</span></label><input id="child1_name" name="child1_name" type="text" required></div><div class="field"><label for="child1_dob">Date of birth <span>*</span></label><input id="child1_dob" name="child1_dob" type="date" required></div><div class="field"><label for="child1_gender">Gender</label><input id="child1_gender" name="child1_gender" type="text"></div><div class="field"><label for="child1_height">Height</label><input id="child1_height" name="child1_height" type="text"></div><div class="field"><label for="child1_weight">Weight</label><input id="child1_weight" name="child1_weight" type="text"></div><div class="field full"><label for="child1_interests">Hobbies / interests</label><textarea id="child1_interests" name="child1_interests" rows="3"></textarea></div></div></div>
+                <div class="child-card optional"><h3>Child 2</h3><div class="form-grid"><div class="field full"><label for="child2_name">Full name</label><input id="child2_name" name="child2_name" type="text" disabled></div><div class="field"><label for="child2_dob">Date of birth</label><input id="child2_dob" name="child2_dob" type="date" disabled></div><div class="field"><label for="child2_gender">Gender</label><input id="child2_gender" name="child2_gender" type="text" disabled></div><div class="field full"><label for="child2_interests">Hobbies / interests</label><textarea id="child2_interests" name="child2_interests" rows="3" disabled></textarea></div></div></div>
+                <div class="child-card optional"><h3>Child 3</h3><div class="form-grid"><div class="field full"><label for="child3_name">Full name</label><input id="child3_name" name="child3_name" type="text" disabled></div><div class="field"><label for="child3_dob">Date of birth</label><input id="child3_dob" name="child3_dob" type="date" disabled></div><div class="field"><label for="child3_gender">Gender</label><input id="child3_gender" name="child3_gender" type="text" disabled></div><div class="field full"><label for="child3_interests">Hobbies / interests</label><textarea id="child3_interests" name="child3_interests" rows="3" disabled></textarea></div></div></div>
+                <div class="child-card optional"><h3>Child 4</h3><div class="form-grid"><div class="field full"><label for="child4_name">Full name</label><input id="child4_name" name="child4_name" type="text" disabled></div><div class="field"><label for="child4_dob">Date of birth</label><input id="child4_dob" name="child4_dob" type="date" disabled></div><div class="field"><label for="child4_gender">Gender</label><input id="child4_gender" name="child4_gender" type="text" disabled></div><div class="field full"><label for="child4_interests">Hobbies / interests</label><textarea id="child4_interests" name="child4_interests" rows="3" disabled></textarea></div></div></div>
+              </div>
+              <button class="add-child" type="button" data-add-child>Add another child</button>
+            </fieldset>
+
+            <fieldset class="form-section" data-section="Health and dietary information">
+              <legend>Health &amp; dietary information<small>These details help us plan safe, comfortable and responsive care.</small></legend>
+              <div class="form-grid">
+                <div class="field full"><span class="field-label">Does child 1 have allergies? <span>*</span></span><div class="choice-grid"><label class="choice"><input type="radio" name="child1_allergies" value="yes" required><span>Yes</span></label><label class="choice"><input type="radio" name="child1_allergies" value="no" required><span>No</span></label></div></div>
+                <div class="field full"><label for="allergy_information">Allergy details and management information</label><textarea id="allergy_information" name="allergy_information"></textarea></div>
+                <div class="field full"><span class="field-label">Does child 1 have a medical condition, disability or additional support need? <span>*</span></span><div class="choice-grid"><label class="choice"><input type="radio" name="child1_medical" value="yes" required><span>Yes</span></label><label class="choice"><input type="radio" name="child1_medical" value="no" required><span>No</span></label></div></div>
+                <div class="field full"><label for="medical_information">Medical, access or support details</label><textarea id="medical_information" name="medical_information"></textarea></div>
+                <div class="field full"><label for="dietary_requirements">Dietary requirements</label><textarea id="dietary_requirements" name="dietary_requirements"></textarea></div>
+                <div class="field full"><label for="routines_comfort">Routines, comfort needs and anything else that will help us care well</label><textarea id="routines_comfort" name="routines_comfort"></textarea></div>
+              </div>
+              <p class="form-note">If supporting medical or court documents are needed, please discuss the safest way to provide them with our team. Files cannot be attached automatically through this form’s email handoff.</p>
+            </fieldset>
+
+            <div class="privacy-note"><strong>Privacy notice.</strong> Little Wonders collects only information reasonably necessary to respond to your enquiry and arrange care. This may include contact details, child personal details, health information and relevant care information. See our <a href="../privacy/">Privacy Policy</a> for more information. Please email any supporting documents separately if our team requests them.</div>
+            <label class="consent"><input type="checkbox" name="privacy_consent" value="I consent to Little Wonders using the information in this form to respond to my parent registration enquiry." required><span>I understand and consent to Little Wonders using the information in this form to respond to my parent registration enquiry. <span>*</span></span></label>
+            <div class="form-actions"><button class="button" type="submit">Prepare Parent Registration Email</button><button class="button secondary" type="reset">Clear form</button><div class="form-status" id="form-status" role="status" aria-live="polite"></div></div>
+          </div>
+        </form>
+      </div>
+      <p class="registration-footer-link">Prefer to speak with us first? <a href="../#contact">Return to the connection form</a> or call 0488 233 252.</p>
+    </div>
+  </main>
+  <script src="../registration.js"></script>
+  <script>document.querySelector('.menu').addEventListener('click',function(){var nav=document.querySelector('nav');var open=nav.classList.toggle('open');this.setAttribute('aria-expanded',open?'true':'false');});document.querySelectorAll('.nav-dropdown>a').forEach(function(a){a.addEventListener('click',function(e){if(window.innerWidth<=760){e.preventDefault();a.parentElement.classList.toggle('open');}});});document.addEventListener('click',function(e){if(!e.target.closest('.nav-dropdown'))document.querySelectorAll('.nav-dropdown.open').forEach(function(x){x.classList.remove('open');});});</script>
+</body>
+</html>

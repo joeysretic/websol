@@ -31,7 +31,7 @@ nav a,.footer-links a{font-size:10px;text-transform:uppercase;letter-spacing:.04
 .script{font-family:'Italianno',cursive;color:#356a9c;font-size:61px;line-height:.82;margin:4px 0 20px}
 .hero-copy>p:not(.eyebrow){max-width:510px;font-size:14px;line-height:1.6;color:#486783}
 .actions{display:flex;gap:14px;margin-top:18px}
-.hero-image{min-height:560px;background:linear-gradient(110deg,#fff8 2%,transparent 30%),url('/assets/wedding-children.jpg') center/cover;position:relative}
+.hero-image{min-height:560px;background:linear-gradient(110deg,#fff8 2%,transparent 30%),url('/assets/babysitting-family.jpg') center/cover;position:relative}
 .image-label{position:absolute;right:11%;top:44%;padding:14px 24px;background:#ffffffe8;color:#9c725d;text-align:center;font-family:'Cormorant Garamond',serif;font-size:23px;line-height:.9}
 .image-label span{font-size:18px}
 
@@ -48,8 +48,10 @@ nav a,.footer-links a{font-size:10px;text-transform:uppercase;letter-spacing:.04
 .intro{color:var(--blue);font-size:15px;margin:0 0 28px}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:center}
 .card{background:#fff;box-shadow:0 10px 30px #1d405914}
-.card-image{height:175px;background:url('/assets/wedding-children.jpg') center/cover}
-.card-image.party{background-image:url('/assets/event-children.jpg')}
+.card-image{height:175px;background:url('/assets/event-children.jpg') center/cover}
+.card-image.wedding-care{background-image:url('/assets/wedding-children.jpg')}
+.card-image.corporate-care{background-image:url('/assets/event-children.jpg')}
+.card-image.party{background-image:url('/assets/wedding-children.jpg')}
 .card-image.defence{background-image:url('/assets/childcare-tent.jpg')}
 .card-body{padding:0 28px 25px;position:relative}
 .round{display:grid;place-items:center;background:#fff;border:1px solid #aac0d3;border-radius:50%;width:54px;height:54px;margin:-26px auto 10px;color:#5a86b1;font-size:28px;position:relative}
@@ -61,7 +63,7 @@ nav a,.footer-links a{font-size:10px;text-transform:uppercase;letter-spacing:.04
 .venue-copy{padding:42px 7%}
 .venues h2{font-size:53px;margin:5px 0 14px}
 .venue-copy>p:not(.eyebrow){font-size:13px;line-height:1.55;color:#46637d;max-width:530px}
-.venue-art{background:linear-gradient(90deg,#dceaf4aa,transparent 35%),url('https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1400&q=85') center/cover}
+.venue-art{background:linear-gradient(90deg,#dceaf4aa,transparent 35%),url('/assets/wonder-team-2.jpg') center/cover}
 .regions{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:18px}
 .regions a{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--blue);font-weight:600}
 .regions a:not(:last-child):after{content:' |';margin-left:15px;color:#7794ab}
@@ -156,7 +158,7 @@ footer{background:#fff;border-top:1px solid var(--line);color:var(--blue)}
 
 /* === Internal pages (internal.css) === */
 main{max-width:1180px;margin:auto;padding:75px 28px 110px}
-.page-hero{min-height:360px;background:linear-gradient(105deg,#d5e8f3ee,#f8e3e9cc 58%,#fff0),url('/assets/wedding-children.jpg') center/cover;padding:70px max(28px,calc((100vw - 1180px)/2));display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;border-radius:0 0 90px 0}
+.page-hero{min-height:360px;background:linear-gradient(105deg,#d5e8f3ee,#f8e3e9cc 58%,#fff0),url('/assets/babysitting-family.jpg') center/cover;padding:70px max(28px,calc((100vw - 1180px)/2));display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;border-radius:0 0 90px 0}
 .page-hero:before{content:'✦';position:absolute;right:9%;top:12%;font-size:130px;color:#fff9;transform:rotate(18deg)}
 .page-hero:after{content:'';position:absolute;right:-40px;bottom:-100px;width:360px;height:220px;background:#f2c9d5;border-radius:50% 0 0 0;opacity:.75}
 .page-hero>*{position:relative;z-index:1}
@@ -176,7 +178,7 @@ main{max-width:1180px;margin:auto;padding:75px 28px 110px}
 .prose p:first-child{font-size:21px;line-height:1.55;color:#315f89}
 .prose ul{padding-left:22px}
 .about-landing{display:grid;grid-template-columns:43% 57%;background:#fff;border:1px solid #dce8ef;border-radius:28px;overflow:hidden;box-shadow:0 22px 55px #174d8018}
-.about-feature-image{min-height:670px;background:linear-gradient(145deg,#fff0,#315f8940),url('/assets/wedding-children.jpg') center/cover;position:relative}
+.about-feature-image{min-height:670px;background:linear-gradient(145deg,#fff0,#315f8940),url('/assets/babysitting-family.jpg') center/cover;position:relative}
 .about-feature-image:after{content:'Care, made personal';position:absolute;bottom:34px;left:28px;background:#ffffffdf;color:#315f89;border-radius:40px;padding:14px 20px;font:italic 25px 'Cormorant Garamond',serif}
 .about-intro{padding:60px 52px;background:linear-gradient(150deg,#fff,#f2f8fb)}
 .about-intro h2{font-size:52px!important;color:#315f89;margin:10px 0 15px!important}

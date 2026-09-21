@@ -7,15 +7,15 @@ export default function Home() {
       <section className="hero">
         <div className="hero-copy">
           <span className="hero-kicker">For beautiful celebrations &amp; the little people you love</span>
-          <p className="eyebrow">Premium wedding &amp; event childcare<br />across Southern Queensland</p>
-          <h1>Designed for<br /><em>Your Wedding.</em></h1>
-          <div className="script">Care curated for<br />Your Children.</div>
-          <p>Thoughtfully tailored childcare experiences for weddings and events across Southern Queensland, so you and your guests can be fully present — knowing the little people are safe, happy and creating memories of their own.</p>
+          <p className="eyebrow">Premium childcare for families, weddings &amp; events<br />across Southern Queensland</p>
+          <h1>Care that makes<br /><em>every moment.</em></h1>
+          <div className="script">More present for<br />What matters most.</div>
+          <p>Thoughtfully tailored childcare experiences for families, weddings and events across Southern Queensland, so you can be fully present — knowing the little people are safe, happy and creating memories of their own.</p>
           <div className="actions">
             <Link className="button" to="/contact">Book Your Connection Call</Link>
             <Link className="button outline" to="/#services">Explore Our Services</Link>
           </div>
-          <div className="hero-note"><span>✦</span> Beautifully considered care, wherever your celebration takes you</div>
+          <div className="hero-note"><span>✦</span> Beautifully considered care, wherever life takes you</div>
         </div>
         <div className="hero-visual">
           <div className="hero-image">
@@ -43,7 +43,7 @@ export default function Home() {
         <p className="intro">Weddings, events and family moments — with care at the heart.</p>
         <div className="cards">
           <article className="card wedding">
-            <div className="card-image"></div>
+            <div className="card-image corporate-care"></div>
             <div className="card-body">
               <span className="round">♡</span>
               <h3>Wedding Childcare</h3>
@@ -52,7 +52,7 @@ export default function Home() {
             </div>
           </article>
           <article className="card">
-            <div className="card-image party"></div>
+            <div className="card-image party wedding-care"></div>
             <div className="card-body">
               <span className="round">♧</span>
               <h3>Private &amp; Corporate Care</h3>

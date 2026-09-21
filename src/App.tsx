@@ -6,6 +6,7 @@ import About from '@/pages/About';
 import EventRegistration from '@/pages/EventRegistration';
 import ParentRegistration from '@/pages/ParentRegistration';
 import Contact from '@/pages/Contact';
+import WonderTeam from '@/pages/WonderTeam';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/event-registration" element={<EventRegistration />} />
           <Route path="/parent-registration" element={<ParentRegistration />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/wonder-team" element={<WonderTeam />} />
         </Routes>
         <Footer />
       </div>

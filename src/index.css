@@ -269,4 +269,48 @@ main{max-width:1180px;margin:auto;padding:75px 28px 110px}
 
 /* === Responsive === */
 @media(max-width:1000px){nav{gap:8px}.site-header{gap:12px}.hero-copy{padding-left:7%}.hero h1{font-size:51px}.script{font-size:51px}}
-@media(max-width:760px){.announcement{font-size:8px;padding:0 10px}.announcement div{display:none}.site-header{height:75px;padding:12px 20px;justify-content:space-between}.brand{min-width:0}.brand strong{font-size:15px}.brand-mark{font-size:32px}nav{display:none;position:absolute;top:106px;left:0;right:0;z-index:5;background:#fff;padding:20px;flex-direction:column;box-shadow:0 8px 20px #0002}nav.open{display:flex}.menu{display:block}.site-header>.button{display:none}.hero{display:block;background:linear-gradient(150deg,#fff 0%,#fff 52%,#e9f3f8 52%)}.hero-copy{padding:42px 25px 35px}.hero:before{font-size:65px;top:5%;left:3%}.hero h1{font-size:58px}.script{font-size:54px}.hero-visual{min-height:425px;padding:15px 25px 48px}.hero-image{width:88%;height:365px;border-radius:110px 18px 110px 18px;box-shadow:10px 12px 0 #b9d4e5}.hero-stamp{left:5%;bottom:9%;width:86px;height:86px;padding-top:14px;font-size:8px}.hero-shape{width:90px;height:90px;right:2%;top:5%}.hero-note{line-height:1.5}.features{grid-template-columns:repeat(2,1fr);padding:20px 8px}.features div{padding:12px 10px;border-bottom:1px solid var(--line)}.services{padding:52px 20px}.services h2,.connect h2{font-size:36px}.cards{grid-template-columns:1fr;gap:25px}.card p{min-height:0}.card.wedding{transform:none}.venues{display:block}.venue-copy{padding:45px 25px}.venue-art{height:230px;clip-path:none}.gallery{height:125px;gap:5px;padding:5px}.gallery-tile{border-radius:7px}.connect{padding:58px 22px}.desktop{display:none}.footer-top{flex-direction:column;text-align:center}.footer-bottom{font-size:8px}.motto{margin-left:0}}
+@media(max-width:760px){.announcement{font-size:8px;padding:0 10px}.announcement div{display:none}.site-header{height:75px;padding:12px 20px;justify-content:space-between}.brand{min-width:0}.brand strong{font-size:15px}.brand-mark{font-size:32px}nav{display:none;position:absolute;top:106px;left:0;right:0;z-index:5;background:#fff;padding:20px;flex-direction:column;box-shadow:0 8px 20px #0002}nav.open{display:flex}.menu{display:block}.site-header>.button{display:none}.hero{display:block;background:linear-gradient(150deg,#fff 0%,#fff 52%,#e9f3f8 52%)}.hero-copy{padding:42px 25px 35px}.hero:before{font-size:65px;top:5%;left:3%}.hero h1{font-size:58px}.script{font-size:54px}.hero-visual{min-height:425px;padding:15px 25px 48px}.hero-image{width:88%;height:365px;border-radius:110px 18px 110px 18px;box-shadow:10px 12px 0 #b9d4e5}.hero-stamp{left:5%;bottom:9%;width:86px;height:86px;padding-top:14px;font-size:8px}.hero-shape{width:90px;height:90px;right:2%;top:5%}.hero-note{line-height:1.5}.features{grid-template-columns:repeat(2,1fr);padding:20px 8px}.features div{padding:12px 10px;border-bottom:1px solid var(--line)}.services{padding:52px 20px}.services h2,.connect h2{font-size:36px}.cards{grid-template-columns:1fr;gap:25px}.card p{min-height:0}.card.wedding{transform:none}.venues{display:block}.venue-copy{padding:45px 25px}.venue-art{height:230px;clip-path:none}.gallery{height:125px;gap:5px;padding:5px}.gallery-tile{border-radius:7px}.connect{padding:58px 22px}.desktop{display:none}.footer-top{flex-direction:column;text-align:center}.footer-bottom{font-size:8px}.motto{margin-left:0}.wonder-intro{grid-template-columns:1fr!important}.wonder-requirements-grid{grid-template-columns:1fr!important}.wonder-phases{grid-template-columns:1fr!important}.wonder-intro-image{min-height:300px!important}.wonder-intro-copy h2{font-size:36px!important}.wonder-quote h2{font-size:30px!important}.wonder-selection h2{font-size:30px!important}.wonder-cta h2{font-size:30px!important}}
+
+/* === Wonder Team page === */
+.wonder-team-content{max-width:1180px;margin:0 auto;padding:0 28px 110px}
+.wonder-intro{display:grid;grid-template-columns:57% 43%;gap:48px;align-items:center;margin-bottom:60px}
+.wonder-intro-copy h2{font-size:42px;line-height:1.05;color:#315f89;margin:10px 0 18px!important}
+.wonder-intro-copy p{font-size:16px;line-height:1.75;color:#53636e;margin:0 0 14px}
+.wonder-intro-copy p:first-of-type{font-size:18px;line-height:1.6;color:#315f89}
+.wonder-motto{font-size:17px!important;color:#466f91!important;font-style:italic}
+.wonder-motto strong{color:#315f89;font-weight:600}
+.wonder-intro-image{border-radius:24px;overflow:hidden;min-height:520px;box-shadow:0 22px 55px #174d8018;position:relative}
+.wonder-intro-image img{width:100%;height:100%;object-fit:cover;display:block}
+.wonder-intro-image:after{content:'Care, made personal';position:absolute;bottom:24px;left:24px;background:#ffffffdf;color:#315f89;border-radius:40px;padding:12px 20px;font:italic 22px 'Cormorant Garamond',serif}
+.wonder-quote{text-align:center;padding:50px 20px;background:linear-gradient(135deg,#f8e4ea,#eaf2f8);border-radius:28px;margin-bottom:60px;position:relative;overflow:hidden}
+.wonder-quote:before{content:'✦';position:absolute;left:8%;top:15%;font-size:80px;color:#efbdcc;opacity:.5}
+.wonder-quote:after{content:'✦';position:absolute;right:8%;bottom:10%;font-size:60px;color:#b8d5e6;opacity:.6}
+.wonder-quote h2{font-size:38px;line-height:1.1;color:#315f89;margin:0 0 10px;position:relative;z-index:1}
+.wonder-quote-sub{font-size:16px;text-transform:uppercase;letter-spacing:.12em;color:#b66f84;font-weight:600;margin:0 0 18px;position:relative;z-index:1}
+.wonder-quote-text{font-size:16px;line-height:1.7;color:#53636e;max-width:600px;margin:0 auto;position:relative;z-index:1}
+.wonder-requirements-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-bottom:60px}
+.wonder-requirements{background:#fff;border:1px solid #dce8ef;border-top:6px solid #b9d4e5;border-radius:24px;padding:40px 44px;box-shadow:0 18px 45px #174d8012;position:relative}
+.wonder-requirements:after{content:'✦';position:absolute;right:24px;top:20px;color:#efbdcc;font-size:38px}
+.wonder-requirements-desired{border-top-color:#f2c9d5;background:#fff7f9}
+.wonder-requirements h3{font:500 32px/1.1 'Cormorant Garamond',serif;color:#315f89;margin:0 0 4px}
+.wonder-requirements h3 span{color:#b66f84}
+.wonder-requirements-label{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:#8291a0;margin:0 0 18px}
+.wonder-requirements ul{list-style:none;padding:0;margin:0}
+.wonder-requirements li{padding:11px 0;border-bottom:1px solid #eef4f8;font-size:14px;line-height:1.6;color:#53636e;display:flex;gap:10px}
+.wonder-requirements li:before{content:'✦';color:#b9d4e5;font-size:13px;flex-shrink:0;margin-top:3px}
+.wonder-requirements-desired li:before{color:#f2c9d5}
+.wonder-requirements li:last-child{border:0}
+.wonder-selection{background:#fff;border:1px solid #dce8ef;border-radius:28px;padding:50px 54px;box-shadow:0 22px 55px #174d8018;margin-bottom:60px;position:relative}
+.wonder-selection:after{content:'✦';position:absolute;right:30px;top:24px;color:#efbdcc;font-size:42px}
+.wonder-selection h2{font-size:38px;line-height:1;color:#315f89;margin:0 0 16px}
+.wonder-selection>p{font-size:16px;line-height:1.75;color:#53636e;max-width:780px;margin:0 0 32px}
+.wonder-phases{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.wonder-phase{background:#f8fbfd;border:1px solid #dce8ef;border-radius:16px;padding:24px 20px;text-align:center;transition:transform .25s,box-shadow .25s}
+.wonder-phase:hover{transform:translateY(-5px);box-shadow:0 12px 25px #174d8015}
+.wonder-phase-num{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:#b66f84;font-weight:700;margin-bottom:10px}
+.wonder-phase strong{display:block;font:500 18px/1.25 'Cormorant Garamond',serif;color:#315f89}
+.wonder-cta{text-align:center;padding:60px 20px;background:radial-gradient(circle at 20% 40%,#f7dfe8 0,transparent 25%),radial-gradient(circle at 80% 60%,#dbeaf5 0,transparent 25%),#fff;border-radius:28px;position:relative;overflow:hidden}
+.wonder-cta h2{font-size:38px;color:#315f89;margin:0 0 24px;position:relative;z-index:1}
+.wonder-cta .button{position:relative;z-index:1}
+@media(max-width:900px){.wonder-intro{grid-template-columns:1fr}.wonder-requirements-grid{grid-template-columns:1fr}.wonder-phases{grid-template-columns:repeat(2,1fr)}.wonder-intro-image{min-height:360px}.wonder-intro-copy h2{font-size:36px}.wonder-selection{padding:36px 28px}.wonder-requirements{padding:32px 28px}}
+@media(max-width:620px){.wonder-phases{grid-template-columns:1fr}.wonder-quote h2{font-size:28px}.wonder-selection h2{font-size:28px}.wonder-cta h2{font-size:28px}.wonder-intro-copy h2{font-size:30px}.wonder-team-content{padding:0 20px 75px}}

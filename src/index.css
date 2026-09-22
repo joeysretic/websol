@@ -31,7 +31,7 @@ nav a,.footer-links a{font-size:10px;text-transform:uppercase;letter-spacing:.04
 .script{font-family:'Italianno',cursive;color:#356a9c;font-size:61px;line-height:.82;margin:4px 0 20px}
 .hero-copy>p:not(.eyebrow){max-width:510px;font-size:14px;line-height:1.6;color:#486783}
 .actions{display:flex;gap:14px;margin-top:18px}
-.hero-image{min-height:560px;background:linear-gradient(110deg,#fff8 2%,transparent 30%),url('/assets/babysitting-family.jpg') center/cover;position:relative}
+.hero-image{min-height:560px;background:linear-gradient(110deg,#fff8 2%,transparent 30%),url('/assets/Wedding_Website.png') center/cover;position:relative}
 .image-label{position:absolute;right:11%;top:44%;padding:14px 24px;background:#ffffffe8;color:#9c725d;text-align:center;font-family:'Cormorant Garamond',serif;font-size:23px;line-height:.9}
 .image-label span{font-size:18px}
 
@@ -48,10 +48,8 @@ nav a,.footer-links a{font-size:10px;text-transform:uppercase;letter-spacing:.04
 .intro{color:var(--blue);font-size:15px;margin:0 0 28px}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:center}
 .card{background:#fff;box-shadow:0 10px 30px #1d405914}
-.card-image{height:175px;background:url('/assets/event-children.jpg') center/cover}
-.card-image.wedding-care{background-image:url('/assets/wedding-children.jpg')}
-.card-image.corporate-care{background-image:url('/assets/event-children.jpg')}
-.card-image.party{background-image:url('/assets/wedding-children.jpg')}
+.card-image{height:175px;background:url('/assets/wedding-children.jpg') center/cover}
+.card-image.party{background-image:url('/assets/event-children.jpg')}
 .card-image.defence{background-image:url('/assets/childcare-tent.jpg')}
 .card-body{padding:0 28px 25px;position:relative}
 .round{display:grid;place-items:center;background:#fff;border:1px solid #aac0d3;border-radius:50%;width:54px;height:54px;margin:-26px auto 10px;color:#5a86b1;font-size:28px;position:relative}
@@ -63,7 +61,7 @@ nav a,.footer-links a{font-size:10px;text-transform:uppercase;letter-spacing:.04
 .venue-copy{padding:42px 7%}
 .venues h2{font-size:53px;margin:5px 0 14px}
 .venue-copy>p:not(.eyebrow){font-size:13px;line-height:1.55;color:#46637d;max-width:530px}
-.venue-art{background:linear-gradient(90deg,#dceaf4aa,transparent 35%),url('/assets/wonder-team-2.jpg') center/cover}
+.venue-art{background:linear-gradient(90deg,#dceaf4aa,transparent 35%),url('/assets/maleny.jpg') center/cover}
 .regions{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:18px}
 .regions a{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--blue);font-weight:600}
 .regions a:not(:last-child):after{content:' |';margin-left:15px;color:#7794ab}

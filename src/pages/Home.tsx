@@ -43,7 +43,7 @@ export default function Home() {
         <p className="intro">Weddings, events and family moments — with care at the heart.</p>
         <div className="cards">
           <article className="card wedding">
-            <div className="card-image corporate-care"></div>
+            <div className="card-image"></div>
             <div className="card-body">
               <span className="round">♡</span>
               <h3>Wedding Childcare</h3>
@@ -52,7 +52,7 @@ export default function Home() {
             </div>
           </article>
           <article className="card">
-            <div className="card-image party wedding-care"></div>
+            <div className="card-image party"></div>
             <div className="card-body">
               <span className="round">♧</span>
               <h3>Private &amp; Corporate Care</h3>
